@@ -35,10 +35,10 @@ const Navbar = {
     </button>
     <div class="for-list">
       <ul class="list-group" :class="{'left1' : show === true}">
-        <li><span class="text-green mr-10">01.</span>About</li>
-        <li><span class="text-green mr-10">02.</span>Experience</li>
-        <li><span class="text-green mr-10">03.</span>Work</li>
-        <li><span class="text-green mr-10">04.</span>Contact</li>
+        <a href='#about'><span class="text-green mr-10">01.</span>About</a>
+        <a><span class="text-green mr-10">02.</span>Experience</a>
+        <a><span class="text-green mr-10">03.</span>Work</a>
+        <a><span class="text-green mr-10">04.</span>Contact</a>
         <button class="btn2" @click='close'>
           <i class="fa-solid fa-xmark"></i>
         </button>

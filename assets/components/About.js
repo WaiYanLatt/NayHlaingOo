@@ -1,6 +1,6 @@
 const About = {
   template: `
-    <div class="about">
+    <div class="about" id='about'>
     <h1 class="about-font"><span class="A01">01.</span>About Me</h1>
     <div>
       <div class="about-flex">

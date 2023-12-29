@@ -1,6 +1,7 @@
 const Home = {
   template: `
     <div class="home">
+    <p class='font text-green'>Hi, my name is</p>
     <h1 class="fs3 color1">Nay Hlaing Oo.</h1>
     <h3 class="fs2">I build things for the web.</h3>
     <p class="font">
