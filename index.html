@@ -12,6 +12,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,27 +31,28 @@
     <div id="app">
       <!-- Navbar -->
       <navbar-component></navbar-component>
+      <!-- Home -->
       <home-component></home-component>
+      <!-- About -->
       <about-component></about-component>
+      <!-- Exp -->
       <exp-component></exp-component>
-      <div class="work">
-        <h1 class="about-font">
-          <span class="A01">03.</span>Some Things I've Built
-        </h1>
-        <div class="work-flex">
-            <div class='pj-relative'>
-               <img src="/assets/img/Netflix.jpg" alt="" class="work-img">
-               <div class="pj-absolute">
-                  <p class="font text-green">featured project</p>
-                  <p class="work-font">Netflix Clone</p>
-                  <p class="work-font2">TV Shows Online service using Tailwindcss</p>
-                  <p class="work-font2">Pure HTML TailwindCSS</p>
-                  <button class="btn-link">
-                     <i class="fa-brands fa-github fa-2xl link"></i>
-                  </button>
-               </div>
-            </div>
-        </div>
+      <!-- Work -->
+      <work-component></work-component>
+      <!-- Next -->
+       <next-component></next-component>
+      <!-- Footer -->
+      <footer-component></footer-component>
+      <!-- Up Button -->
+      <div v-show="upShow === true">
+        <a href="#home">
+          <button
+            class="up animate__animated"
+            :class="{'animate__fadeInDown' : upShow === true}"
+          >
+            <i class="fa-solid fa-angle-up text-white"></i>
+          </button>
+        </a>
       </div>
     </div>
     <!-- VueJS CDN -->

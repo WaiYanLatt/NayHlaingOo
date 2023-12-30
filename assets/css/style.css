@@ -16,8 +16,6 @@
   }
   .navbar{
     background-color: #0a192f;
-    position: fixed;
-    top: 0%;
     padding-left:50px;
     padding-right:50px;
     width: 100%;
@@ -25,6 +23,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
+    box-shadow: #64ffda 0px 3px 3px 0px;
+  }
+  .position{
+    position: fixed;
+    top: 0%;
   }
   .text-black{
     color: black;
@@ -118,6 +122,12 @@
     font-weight: bold;
     line-height:25px;
   }
+  .font1{
+    margin-top: 30px;
+    max-width: 1000px;
+    font-weight: bold;
+    line-height:25px;
+  }
   .about{
     margin-top: 100px;
     margin-left: 180px;
@@ -191,12 +201,17 @@
   .mr-11{
      margin-right: 120px;
   }
+  .mr-12{
+    margin-right: 50px;
+ }
   .work{
     margin-top: 100px;
     margin-left: 180px;
   }
   .work-flex{
     margin-top: 50px;
+    display:grid;
+    grid-template-columns: auto auto;
   }
   .work-img{
     width: 500px;
@@ -205,9 +220,11 @@
     border-radius: 5px;
     opacity:35%;
     border: 1px solid #374151;
+    margin-top: 30px;
   }
   .pj-relative{
     position: relative;
+    cursor: not-allowed;
   }
   .pj-absolute{
     position: absolute;
@@ -233,6 +250,40 @@
   .link:hover{
     color: #64ffda;
     cursor: pointer;
+  }
+  .ml-3{
+    margin-left: 20px;
+  }
+  .next{
+    margin-top: 100px;
+    margin-left: 180px;
+  }
+  .mt-10{
+    margin-top: 50px;
+  }
+  .up{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+    color: white;
+    background-color: #64ffda;
+    box-shadow: #64ffda 0px 7px 29px 0px;
+    position: fixed;
+    z-index: 20;
+    bottom: 10%;
+    left: 5%;
+    cursor: pointer;
+  }
+  .text-white{
+    color: white;
+  }
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
   }
   @media screen and (max-width : 460px) {
     .navbar{

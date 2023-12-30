@@ -2,18 +2,37 @@ const Navbar = {
   data() {
     return {
       show: false,
+      isNavshow: false,
     };
   },
-  methods : {
-    open(){
-        this.show = true;
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed() {
+    // Remove the scroll event listener when the component is destroyed
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    open() {
+      this.show = true;
     },
-    close(){
-        this.show = false;
-    }
+    close() {
+      this.show = false;
+    },
+    handleScroll() {
+      if(window.scrollY === 0){
+        this.isNavshow = true;
+      }
+      if(window.scrollY > 580) {
+         this.isNavshow = true;
+      }
+      if(window.scrollY < 580){
+        this.isNavshow = false;
+      }
+    },
   },
   template: `
-    <div class="navbar">
+    <div class="navbar animate__animated" :class="{'position animate__fadeInDown' : isNavshow === true}">
     <div>
       <i class="fa-regular fs1 fa-circle-user text-green"></i>
     </div>
