@@ -1,6 +1,6 @@
 const Exp = {
   template: `
-    <div class="exp">
+    <div class="exp" id='exp'>
     <h1 class="about-font">
       <span class="A01">02.</span>Where I've Worked
     </h1>

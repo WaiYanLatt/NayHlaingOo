@@ -20,13 +20,13 @@ const Navbar = {
       this.show = false;
     },
     handleScroll() {
-      if(window.scrollY === 0){
+      if (window.scrollY === 0) {
         this.isNavshow = true;
       }
-      if(window.scrollY > 580) {
-         this.isNavshow = true;
+      if (window.scrollY > 580) {
+        this.isNavshow = true;
       }
-      if(window.scrollY < 580){
+      if (window.scrollY < 580) {
         this.isNavshow = false;
       }
     },
@@ -55,9 +55,9 @@ const Navbar = {
     <div class="for-list">
       <ul class="list-group" :class="{'left1' : show === true}">
         <a href='#about'><span class="text-green mr-10">01.</span>About</a>
-        <a><span class="text-green mr-10">02.</span>Experience</a>
-        <a><span class="text-green mr-10">03.</span>Work</a>
-        <a><span class="text-green mr-10">04.</span>Contact</a>
+        <a href='#exp'><span class="text-green mr-10">02.</span>Experience</a>
+        <a href='#Work'><span class="text-green mr-10">03.</span>Work</a>
+        <a href='#contact'><span class="text-green mr-10">04.</span>Contact</a>
         <button class="btn2" @click='close'>
           <i class="fa-solid fa-xmark"></i>
         </button>
