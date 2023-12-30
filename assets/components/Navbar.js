@@ -36,13 +36,13 @@ const Navbar = {
     <div>
       <i class="fa-regular fs1 fa-circle-user text-green"></i>
     </div>
-    <button class="btn3" @click='open'>
+    <button class="btn3 " @click='open'>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
-        stroke="currentColor"
+        stroke="#64ffda"
         class="w-6 h-6"
       >
         <path

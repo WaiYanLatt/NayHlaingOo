@@ -1,7 +1,7 @@
 const Next = {
   template: `
     <div class="next" id='contact'>
-    <h1 class="about-font"><span class="A01">03.</span>What's Next?</h1>
+    <h1 class="about-font"><span class="A01">04.</span>What's Next?</h1>
     <h1 class="fs3 color1 mt-10">Get In Touch</h1>
     <p class="font1">
       Although I’m not currently looking for any new opportunities, my inbox
